@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <main>
       <Header />
-      <h1 className="text-3xl font-bold underline">Hello world!</h1>
+      <div className={"bg-[@E4E5E9] w-full h-full"}></div>
     </main>
   );
 }
