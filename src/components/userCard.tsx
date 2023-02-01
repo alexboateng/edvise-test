@@ -16,7 +16,7 @@ function UserCard({
   return (
     <div
       className={clsx(
-        "flex items-center gap-x-4",
+        "flex items-center gap-x-2",
         reverseLayout && "flex-row-reverse"
       )}
     >
