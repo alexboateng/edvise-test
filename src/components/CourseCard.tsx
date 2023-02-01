@@ -2,18 +2,11 @@ import React from "react";
 import { Course } from "@/types/course";
 import UserCard from "@/components/userCard";
 import { Button } from "@/components/Button";
-import { Menu } from "@headlessui/react";
 import CourseMenu from "./CourseMenu";
+
 type Props = {
   course: Course;
 };
-
-const links = [
-  { href: "/account-settings", label: "Account settings" },
-  { href: "/support", label: "Support" },
-  { href: "/license", label: "License" },
-  { href: "/sign-out", label: "Sign out" },
-];
 
 function CourseCard({ course }: Props) {
   return (
