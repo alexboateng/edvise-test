@@ -23,7 +23,7 @@ function AddIcon() {
 function CourseHeader() {
   return (
     <div className={"block md:flex items-center py-5 justify-between"}>
-      <div className={"flex h-10 gap-x-3"}>
+      <div className={"flex h-10 gap-x-3 md:w-[40%]"}>
         <SearchInput />
         <Button variant={"outline"} className="gap-x-2">Filter <FilterIcon /></Button>
       </div>

@@ -3,7 +3,7 @@ import { Search } from "react-iconly";
 
 export default function SearchInput() {
   return (
-    <div>
+    <div className="w-[100%]">
       <div className="flex justify-center content-center w-full h-10 rounded-md border-gray-300 border focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm relative">
         <div className="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
           <Search style={styles.iconStyles} />
