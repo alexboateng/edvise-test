@@ -1,6 +1,6 @@
 import { Course } from "@/types/course";
 
-const courses: Course[] = [
+export const courses: Course[] = [
   {
     id: "1",
     title: "Lesson 1",
