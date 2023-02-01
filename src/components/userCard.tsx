@@ -21,7 +21,7 @@ function UserCard({
       )}
     >
       <div className="hidden sm:block">
-        <h2 className="text-md font-medium text-gray-800 ">{name}</h2>
+        <h2 className="text-sm font-medium text-gray-800 ">{name}</h2>
         <p className="text-sm text-gray-500">{description}</p>
       </div>
       <img

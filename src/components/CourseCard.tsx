@@ -11,13 +11,13 @@ type Props = {
 function CourseCard({ course }: Props) {
   return (
     <div>
-      <div className="max-w-2xl mx-auto">
-        <div className="bg-white shadow-sm hover:shadow-md transition-all decoration-2 border border-gray-200 rounded-lg max-w-sm dark:bg-gray-800 dark:border-gray-700">
+      <div className="max-w-2xl ">
+        <div className="bg-white mx-auto  hover:shadow-md transition-all rounded-lg max-w-sm dark:bg-gray-800">
           <a href="#">
             <div className={"relative"}>
               <div
                 className={
-                  "bg-white rounded-full px-3 py-1 top-3 right-3 absolute z-10"
+                  "bg-white rounded-lg px-3 py-1 top-3 right-3 absolute z-10"
                 }
               >
                 {course.duration}
@@ -28,13 +28,18 @@ function CourseCard({ course }: Props) {
           <div className="flex flex-col gap-y-3 p-5">
             <div className={"flex justify-between items-center"}>
               <div>
-                <h3>{course.title}</h3>
-                <p className={"text-sm text-gray-500"}>{course.date}</p>
+                <h3 className={"font-bold text-sm"}>{course.title}</h3>
+                <div className="flex text-xs gap-x-1">
+                  <span className={"text-gray-500"}>Date :</span>
+                  <span>{course.date}</span>
+                </div>
               </div>
               <CourseMenu />
             </div>
             <div
-              className={"flex justify-between pt-3 border-t  border-gray-100"}
+              className={
+                "flex justify-between items-center pt-3 border-t  border-gray-100"
+              }
             >
               <UserCard
                 reverseLayout={true}
@@ -42,7 +47,9 @@ function CourseCard({ course }: Props) {
                 description={course.teacher.id}
                 profileUrl={course.teacher.image}
               />
-              <Button variant={"outline"}>Generate Content</Button>
+              <Button className={"h-8"} variant={"outline"}>
+                Generate Content
+              </Button>
             </div>
           </div>
         </div>

@@ -5,8 +5,10 @@ module.exports = {
     extend: {
       colors: {
         primary: "#0BA8E0",
+        secondary: "#ABAFB8",
       },
     },
   },
   plugins: [require("@headlessui/tailwindcss")({ prefix: "ui" })],
 };
+

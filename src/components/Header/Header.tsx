@@ -8,12 +8,12 @@ import UserCard from "@/components/userCard";
 
 function Header() {
   return (
-    <header className="py-10 bg-white">
+    <header className="py-6 bg-white">
       <Container>
         <nav className="relative z-50 flex justify-between">
           <div className="flex items-center md:gap-x-12">
             <Link href="#" aria-label="Home">
-              <Logo className="h-10 w-auto" />
+              <Logo className="h-10 w-auto pr-5 border-r-2 border-secondary" />
             </Link>
             <div className="hidden md:flex md:gap-x-6">
               {Routes.map((item) => (

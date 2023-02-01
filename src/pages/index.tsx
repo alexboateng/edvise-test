@@ -3,12 +3,13 @@ import { courses } from "@/lib/courses";
 import CourseCard from "@/components/CourseCard";
 import { Container } from "@/components/Container";
 import CourseHeader from "@/components/CourseHeader";
+import Pagination from "@/components/Pagination";
 
 export default function Home() {
   return (
-    <main>
+    <main className={""}>
       <Header />
-      <div className={"bg-gray-50 w-full h-full"}>
+      <div className={"bg-gray-50 pb-6 w-full h-full"}>
         <Container>
           <CourseHeader />
           <div
@@ -19,6 +20,9 @@ export default function Home() {
             {courses.map((item) => (
               <CourseCard key={item.id} course={item} />
             ))}
+          </div>
+          <div className="flex justify-center pt-8">
+            <Pagination />
           </div>
         </Container>
       </div>
